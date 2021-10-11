@@ -1,12 +1,14 @@
-import { StrictMode } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
+import SeasonDisplay from "./SeasonDisplay";
 
-import App from "./App";
+const App = () => {
+  return (
+    <div>
+      Hi Tehere
+      <SeasonDisplay />
+    </div>
+  );
+};
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  rootElement
-);
+ReactDOM.render(<App />, document.querySelector("#root"));
